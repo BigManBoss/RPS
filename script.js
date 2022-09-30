@@ -5,17 +5,15 @@ function getComputerChoice() {
     let i = Math.floor(Math.random() * 3);
     return GameOptions[i];
 };
-function getPlayerChoice() {
-
-};
 
 //transforming the values from funtions to variables
 var ComputerSelection = getComputerChoice();
 // var PlayerSelection = getPlayerChoice();
 
-var PlayerSelection = "Paper";
+var PlayerSelection = "";
 
 //play function sees what the players chose and sees who wins
+//I loweredcased everything (I didnt need to)
 function play(cpu, human) {
     cpu = cpu.toLowerCase();
     human = human.toLowerCase();
@@ -42,6 +40,15 @@ function play(cpu, human) {
     }
 };
 
-console.log(ComputerSelection);
-play(ComputerSelection, PlayerSelection);
-
+function rock() {
+    PlayerSelection = "Rock"
+    play(ComputerSelection, PlayerSelection);
+}
+function paper() {
+    PlayerSelection = "Paper"
+    play(ComputerSelection, PlayerSelection);
+}
+function scissors() {
+    PlayerSelection = "Scissors"
+    play(ComputerSelection, PlayerSelection);
+}
