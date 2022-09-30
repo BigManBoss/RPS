@@ -1,8 +1,32 @@
 body {
     background-color: rgb(99, 114, 124);
-    margin: 0;
+    margin: 0px;
 }
 
+main {
+    text-align: center;
+}
+
+.playerSelect {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.playerSelect div {
+    background-color: rgb(162, 165, 165);
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.playerSelect div:hover {
+    background-color: rgb(0, 142, 142);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .3s;
+}
 .copyright {
     position:fixed;
     width:100%;
