@@ -7,9 +7,8 @@ function getComputerChoice() {
 };
 
 //transforming the values from funtions to variables
-var ComputerSelection = getComputerChoice();
+var ComputerSelection = "";
 // var PlayerSelection = getPlayerChoice();
-
 var PlayerSelection = "";
 
 //play function sees what the players chose and sees who wins
@@ -37,19 +36,23 @@ function play(cpu, human) {
         } else {
             document.getElementById("change").innerHTML = "The CPU chose Paper so you won!!!";
         };
-    }
+    };
+    
 };
 
 
 function rock() {
     PlayerSelection = "Rock"
+    ComputerSelection = getComputerChoice();
     play(ComputerSelection, PlayerSelection);
 }
 function paper() {
     PlayerSelection = "Paper"
+    ComputerSelection = getComputerChoice();
     play(ComputerSelection, PlayerSelection);
 }
 function scissors() {
     PlayerSelection = "Scissors"
+    ComputerSelection = getComputerChoice();
     play(ComputerSelection, PlayerSelection);
 }
