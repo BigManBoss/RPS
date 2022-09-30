@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(99, 114, 124);
+    margin: 0;
+}
+
+.copyright {
+    position:fixed;
+    width:100%;
+    background-color: rgb(46, 53, 58);
+    padding: 5px;
+    border-top: 5px solid rgb(15, 17, 19);
+    text-align: center;
+}

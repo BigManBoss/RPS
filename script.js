@@ -3,7 +3,7 @@ const GameOptions = ['Rock', 'Paper', 'Scissors'];
 //setting the players choice functions
 function getComputerChoice() {
     let i = Math.floor(Math.random() * 3);
-    return i;
+    return GameOptions[i];
 };
 function getPlayerChoice() {
 
@@ -13,14 +13,14 @@ function getPlayerChoice() {
 var ComputerSelection = getComputerChoice();
 // var PlayerSelection = getPlayerChoice();
 
-var PlayerSelection = getPlayerChoice();
+var PlayerSelection = "Paper";
 
 //play function sees what the players chose and sees who wins
 function play(cpu, human) {
     cpu = cpu.toLowerCase();
     human = human.toLowerCase();
     if (cpu === human) {
-        console.log("You both chose " + ComputerSelection + " , try again!");
+        console.log("You both chose " + ComputerSelection + ", try again!");
     } else if (human === "rock") {
         if (cpu === "paper") {
             console.log("The CPU chose Paper so you lost!!!");
@@ -41,3 +41,7 @@ function play(cpu, human) {
         };
     }
 };
+
+console.log(ComputerSelection);
+play(ComputerSelection, PlayerSelection);
+
