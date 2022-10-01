@@ -103,6 +103,15 @@ function scissors() {
 
 
 function CheckWins() {
-    document.getElementById("p").innerHTML = "Player: " + playerwins();
-    document.getElementById("c").innerHTML = "CPU: " + computerwins();
+        document.getElementById("p").innerHTML = "Player: " + playerwins();
+        document.getElementById("c").innerHTML = "CPU: " + computerwins();
+    if (ComputerWins === 5 || PlayerWins === 5) {
+        if (ComputerWins === 5) {
+            document.getElementById("loss").style.opacity = 1;
+            document.getElementById("loss").style.zIndex = 1000;
+        } else {
+            document.getElementById("win").style.opacity = 1;
+            document.getElementById("win").style.zIndex = 1000;
+        };
+    };
 };
