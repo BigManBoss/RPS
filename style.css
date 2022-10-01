@@ -6,10 +6,17 @@ body {
 main {
     text-align: center;
     padding: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+.result {
+    height: 50px;
+    width: auto;
 }
 
+#change {
+    font-size: 35px;
+}
 .title {
-    font-family: "Audiowide", sans-serif;
     font-size: 75px;
     border: 3px solid black;
     border-radius: 20px;
@@ -37,6 +44,56 @@ main {
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+.rock {
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+}
+.rock div {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.rock:hover div {
+    opacity: 1;
+    transition: .3s ease;
+}
+.paper {
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+}
+
+.paper div {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.paper:hover div {
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.scissors {
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+}
+.scissors div {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.scissors:hover div {
+    opacity: 1;
+    transition: .3s ease;
 }
 
 .playerSelect button {
