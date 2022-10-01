@@ -14,9 +14,10 @@ main {
     border: 3px solid black;
     border-radius: 20px;
     height: auto;
-    display: flex;
+    width: 75%;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 .wins {
     height: auto;
@@ -62,10 +63,7 @@ main {
     color: gray;
 }
 
-img {
+.playerSelect img {
     height: 75%;
     width: 75%;
-}
-.rock {
-    background-image: url("/images/rock.png");
 }
